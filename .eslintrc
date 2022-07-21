@@ -1,0 +1,54 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "plugins": ["@typescript-eslint", "react-hooks", "prettier"],
+  "rules": {
+    "endOfLine": "auto",
+    "arrow-body-style": "off",
+    "prettier/prettier": "warn",
+    "camelcase": "off",
+    "no-return-assign": "off",
+    "no-param-reassign": [
+      "off",
+      {
+        "props": false
+      }
+    ],
+    "endOfLine": "auto",
+    "no-nested-ternary": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["warn"],
+    "no-unused-expressions": [
+      "off",
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true
+      }
+    ],
+    "lines-between-class-members": "off",
+    "import/order": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": "off",
+    "no-debugger": "off",
+    "max-classes-per-file": "off",
+    "no-use-before-define": "off",
+    "no-console": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "no-empty": "off",
+    "no-empty-pattern": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "no-undef": "off",
+        "spaced-comment": "off"
+      }
+    }
+  ]
+}
